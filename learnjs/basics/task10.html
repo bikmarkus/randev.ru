@@ -3,7 +3,9 @@
 	let enterTheMatrix = confirm('Wanna question, maaan?');
 	if (enterTheMatrix){
 		let age = prompt('How old are you?');
-		let result = (Number.isNaN(age)) ? ('Your age is + ' + age) : ('Bad input, sorry:/');
+		age = Number(age);
+		let result = (!Number.isNaN(age)) ? ('Your age is ' + age) : ('Bad input, sorry:/');
 		alert (result);
 	}
+	console.log('punchline: prompt always gets a string type, so you must use a casting to number, and after that check if your result is not a number - by isNaN method.');
 </script>
