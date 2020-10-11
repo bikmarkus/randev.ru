@@ -2,5 +2,28 @@
 	"use strict";
 	console.log('Три типа циклов: for, while и do/while');	
 	console.log('Операторы continue - переход на следующую итерацию цикла и break - выход из цикла');
-	console.log('Бесконечный цикл - while(true)');
+	let i=0;
+	for(i=0;i<10;i++)
+	{
+		console.log('Namaste!');
+	}
+	console.log('do-while cycle');
+	do{
+		console.log('Stay foolish.Stay hungry!');
+			i++;
+	}while(i<10);
+	console.log('Infinite cycle');
+	while(true){
+		console.log(i++);
+		if(i==15) break;
+	}
+	for(let u=0;u<5;u++)
+	{
+		for(let v=0;v<5;v++)
+		{
+			console.log('u='+u);
+			console.log('\nv='+v);
+		}
+	}
+	console.log('\nPunchline:all the cycles illustrated!');
 </script>
