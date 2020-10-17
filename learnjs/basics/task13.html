@@ -1,0 +1,45 @@
+<script>
+	"use strict";
+	let TaskDesc="Functions investigation";
+	console.log(TaskDesc);
+	function getNumName(userNum){
+		switch(Number(userNum)){
+		case 1:
+		return 'Один';
+		break;
+		case 2:
+		return 'Два';
+		break;
+		case 3:
+		return 'Три';
+		break;
+		case 4:
+		return 'Четыре';
+		break;
+		case 5:
+		return 'Пять';
+		break;
+		default:
+		return false;
+		break;
+		}
+	}
+	function checkNum(num)
+	{
+		if(Number(num)<1 || Number(num)>5) return false;
+		return true;
+	}
+	while(true)
+	{
+		let userNumber = prompt('Введите число от 1 до 5');
+		if (userNumber == '-1') {
+			confirm('Exit');
+			break;
+		}
+		if (!checkNum(userNumber) || !getNumName(userNumber)){
+			alert('Wrong Input!Try again,buddy.');
+			continue;
+		};
+		alert(getNumName(userNumber));
+	}
+</script>
