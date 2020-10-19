@@ -1,0 +1,25 @@
+<script>
+	"use strict";
+	let taskDescr = 'Functions interconnection - arrows added';
+	console.log(taskDescr);
+	let error = (msg) => console.log(msg);
+	function sumOfTwo(numF,numS,func)
+	{
+		if((Number.isNaN(Number(numF))==false)&&(Number.isNaN(Number(numS))==false))
+		{
+			let sum = Number(numF)+Number(numS);
+			return console.log(sum);
+			}
+				else 
+			{
+			console.log("Incorrect input!");
+		}
+	}
+	while(true)
+	{
+		let num1 = prompt("Set first number!");		
+		let num2 = prompt("Set second number!");
+		sumOfTwo(num1,num2,error);
+		if (Number(num1)==11||Number(num2)==11) break;
+	}
+</script>
